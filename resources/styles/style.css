@@ -11,7 +11,30 @@ html {
 .container {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+/* Typography */
+.content {
+  background-color: black;
+  font-weight: 700;
+  width: 1200px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.content h2 {
+  font-size: 1.5rem;
+}
+
+.content h4 {
+  font-size: 1rem;
+}
+
 /* Header and Navigation */
 header {
   width: 100%;
@@ -27,6 +50,7 @@ header {
 #logo {
   height: 50px;
   float: left;
+  align-self: flex-start;
 }
 
 .navigation {
@@ -35,6 +59,7 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  align-self: flex-end;
 }
 
 .navigation a {
@@ -54,22 +79,6 @@ header {
   height: 700px;
   width: 1200px;
   margin: 0 auto;
-  flex-direction: column;
-  justify-content: center;
 }
 
-.banner section {
-  background-color: black;
-  font-weight: 700;
-  width: 1200px;
-}
-
-.banner h2 {
-  font-size: 1.5rem;
-  margin: 10px 0 20px 0;
-}
-
-.banner h4 {
-  font-size: 1rem;
-  margin: 10px 0 10px 0;
-}
+/* Featured Tea Section */
